@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@aaaboulmagd 
-mattmcspirit
-/
-hybridworkshop
-Public
-Code
-Issues
-5
-Pull requests
-2
-Actions
-Projects
-Wiki
-Security
-Insights
-hybridworkshop/yaml/azure-vote.yaml
-@mattmcspirit
-mattmcspirit Updated step 5
-Latest commit 1b90ced on Apr 7, 2021
- History
- 1 contributor
-82 lines (82 sloc)  1.5 KB
-
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -111,16 +80,3 @@ spec:
   - port: 80
   selector:
     app: azure-vote-front
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
