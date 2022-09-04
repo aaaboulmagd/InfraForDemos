@@ -1,2 +1,4 @@
+metadata:
+  name: k-azure-vote-back
 resources:
 - Azure-Vote.yaml
