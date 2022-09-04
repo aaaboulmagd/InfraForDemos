@@ -2,4 +2,4 @@
 #kind: Kustomization
 
 resources:
-  - ./Azure-Vote.yaml
+- Azure-Vote.yaml
