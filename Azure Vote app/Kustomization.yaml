@@ -1,3 +1,4 @@
 kind: Kustomization
+
 resources:
   - Azure-Vote.yaml
