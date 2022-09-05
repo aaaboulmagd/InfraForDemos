@@ -4,4 +4,4 @@ namespace: default
 metadata:
   name: k-azure-vote
 resources:
-  - Azure-Vote.yaml
+  - AzureVote.yaml
