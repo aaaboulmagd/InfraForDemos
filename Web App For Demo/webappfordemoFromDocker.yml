@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: azure-vote-front
+  name: the-demo-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: azure-vote-front
+      app: the-demo-app
   template:
     metadata:
       labels:
-        app: azure-vote-front
+        app: the-demo-app
     spec:
       nodeSelector:
         "beta.kubernetes.io/os": linux
       containers:
-      - name: azure-vote-front
+      - name: the-demo-app
         image: docker.io/aboulmagd/webappfordemo:latest
         resources:
           requests:
@@ -28,16 +28,15 @@ spec:
         - containerPort: 80
         env:
         - name: REDIS
-          value: "azure-vote-back"
+          value: "redis-back"
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: azure-vote-front
+  name: the-demo-app
 spec:
   type: LoadBalancer
   ports:
   - port: 80
   selector:
-    app: azure-vote-front
-#test
+    app: the-demo-app
