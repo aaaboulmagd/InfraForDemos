@@ -1,14 +1,9 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: dev
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: the-demo-app
 spec:
-  replicas: 0
+  replicas: 1
   selector:
     matchLabels:
       app: the-demo-app
@@ -45,3 +40,8 @@ spec:
   - port: 80
   selector:
     app: the-demo-app
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dev
