@@ -1,3 +1,2 @@
-namespace: default
 resources:
   - Azure-Vote.yaml
