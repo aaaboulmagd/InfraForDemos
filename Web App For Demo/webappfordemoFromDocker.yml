@@ -40,8 +40,8 @@ spec:
   - port: 80
   selector:
     app: the-demo-app
----
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: demo-app-dev
+#---
+#apiVersion: v1
+#kind: Namespace
+#metadata:
+#  name: demo-app-dev
