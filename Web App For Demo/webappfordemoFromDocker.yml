@@ -44,4 +44,4 @@ spec:
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: dev
+  name: demo-app-dev
